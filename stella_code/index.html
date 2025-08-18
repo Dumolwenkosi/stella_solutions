@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stella Solutions-Home</title>
 </head>
+
 <body id = "home-page"> <!-- Page Specific id -->
     
     <!--Header Section-->
@@ -12,16 +14,52 @@
     <header id = "main-header">
     <h1>Welcome to Stella Solutions</h1>
 
-    <!--Navigation Menu-->
-    <nav id = "main-nav">
-        <a href  = "index.html">Home</a>
-        <a href  = "about.html">About Us</a>
-        <a href  = "#contact">Contact</a> <!-- Internal Link to the contact section-->
-    </nav>
+       <!--Navigation Menu-->
+       <nav id = "main-nav">
+           <a href  = "index.html">Home</a>
+           <a href  = "about.html">About Us</a>
+           <a href  = "#contact">Contact</a> <!-- Internal Link to the contact section-->
+        </nav>
 
 
     </header>
 
     <hr>
-</body>
+
+    <!--Introduction Section-->
+    <section id = "intro-section">
+        <h2>Your Partner in innovation</h2> <!--Section Heading-->
+        <p>
+            At Stellar Solutions, we provide <strong> cutting edge</strong> solutions for modern businesses.
+            From software development to <em>creative design</em>, our team is dedicated to excellence.       
+        </p>
+
+            <!--Image Representing Teamwork-->
+            <img src =  "images/team_work.jpg"
+            alt = "Team working together on a project"
+            stye = "max-width: 100%; height: auto;"> <!--Ensures image scales responsively-->
+    </section>
+
+    <hr>
+
+    <!--Contact Section-->
+    <section id = "contact_section">
+         <h2>Get in Touch</h2>
+         <p>Have a project i mind?. Fil out our contact form below and we will get back to you! </p>
+
+         <!--Contact FOrm-->
+         <form id = "contact form" action = "/submit-contract" method = "post">
+            <label for = "email">Your email: </label> <br>
+            <input type = "email" id = "email" name = "email" required> <br><br>
+
+            <input type = "submit" value = "Send">
+         </form>
+
+        <hr>
+
+
+
+    </section>
+
+</body>  
 </html>
